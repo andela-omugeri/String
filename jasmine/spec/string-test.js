@@ -19,6 +19,8 @@ describe('toLower', function() {
 describe('ucFirst', function() {
   it('should convert the first char of a string to uppercase', function() {
     expect('small baby'.ucFirst()).toEqual('Small baby');
+    expect('Kevin'.ucFirst()).toEqual('Kevin');
+    expect('?hi there'.ucFirst()).toEqual('?hi there');
   });
 });
 
@@ -45,8 +47,9 @@ describe('wordCount', function() {
 
 describe('toCurrency', function() {
   it('should turn a number, string into currency format', function() {
-    expect('1264829'.toCurrency()).toEqual('1,264,829.');
+    expect('1264829'.toCurrency()).toEqual('1,264,829');
     expect('97934.56'.toCurrency()).toEqual('97,934.56');
+    expect('123'.toCurrency()).toEqual('123');
   });
 });
 

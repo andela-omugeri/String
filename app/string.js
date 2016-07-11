@@ -12,7 +12,7 @@ String.prototype.toLower = function() {
     });
 };
 String.prototype.ucFirst = function() {
-    return this.replace(/[a-z]/, (upperFirst) => {
+    return this.replace(/^[a-z]/, (upperFirst) => {
       return upperFirst.toUpper();
     });
 };
@@ -43,6 +43,10 @@ String.prototype.toCurrency = function() {
     var pattern = /(-?\d+)(\d{3})/;
     while(pattern.test(beforeDot)) {
       beforeDot = beforeDot.replace(pattern, '$1' + ',' + '$2');
+    }
+    if(!money[1]){
+      console.log(money[1]);
+      return beforeDot;
     }
     return [beforeDot, money[1]].join('.');
 };
