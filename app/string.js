@@ -1,4 +1,4 @@
-String.prototype.hasVowels = function(){
+String.prototype.hasVowels = function() {
     return /[aeiou]/i.test(this);
   };
 String.prototype.toUpper = function() {
