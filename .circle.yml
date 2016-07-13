@@ -1,2 +1,5 @@
 general:
   build_dir: jasmine/spec
+test:
+  override:
+    - npm test

@@ -4,7 +4,8 @@
   "description": "Extension of the String class in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine/spec/support/jasmine.json"
+
   },
   "repository": {
     "type": "git",
