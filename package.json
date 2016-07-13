@@ -1,7 +1,12 @@
 {
   "name": "string",
   "version": "1.0.0",
-  "description": "Extension of the String class in Javascript",
+  "description": "Dependecies needed for the string extension",
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.3"
+  },
+
   "main": "index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine/spec/support/jasmine.json"
@@ -16,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/andela-omugeri/String/issues"
   },
-  "homepage": "https://github.com/andela-omugeri/String#readme"
+  "homepage": "https://github.com/andela-omugeri/String#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }
