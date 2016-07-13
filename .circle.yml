@@ -1,0 +1,5 @@
+general:
+  build_dir: api
+test:
+  override:
+    - npm test
