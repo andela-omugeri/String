@@ -1,8 +1,7 @@
 languages:
   JavaScript: true
 exclude_paths:
-- "jasmine/lib/jasmine-2.3.4/jasmine.js"
-- "jasmine/lib/jasmine-2.3.4/jasmine-html.js"
+- "jasmine/lib"
 engines:
   # ... CONFIG CONTENT ...
   eslint:
