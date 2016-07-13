@@ -1,5 +1,8 @@
 general:
   build_dir: api
+dependencies:
+  pre:
+    - npm install -g jasmine
 test:
   override:
     - npm test
