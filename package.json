@@ -1,6 +1,10 @@
 {
   "name": "string",
   "version": "1.0.0",
+  "engines" : {
+    "node": "6.2.1",
+    "npm": "3.9.3"
+  }
   "description": "Dependecies needed for the string extension",
   "main": "index.js",
   "scripts": {
