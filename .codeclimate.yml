@@ -3,3 +3,13 @@ languages:
 exclude_paths:
 - "jasmine/lib/jasmine-2.3.4/jasmine.js"
 - "jasmine/lib/jasmine-2.3.4/jasmine-html.js"
+engines:
+  # ... CONFIG CONTENT ...
+  eslint:
+    enabled: true
+    # ... CONFIG CONTENT ...
+    checks:
+      no-extend-native:
+        enabled: false
+# ... CONFIG CONTENT ...
+
