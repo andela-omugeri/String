@@ -1,0 +1,19 @@
+{
+  "name": "string",
+  "version": "1.0.0",
+  "description": "Extension of the String class in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-omugeri/String.git"
+  },
+  "author": "olive-nyotu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-omugeri/String/issues"
+  },
+  "homepage": "https://github.com/andela-omugeri/String#readme"
+}
