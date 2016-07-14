@@ -50,6 +50,7 @@ describe('toCurrency', function() {
     expect('1264829'.toCurrency()).toEqual('1,264,829');
     expect('97934.56'.toCurrency()).toEqual('97,934.56');
     expect('123'.toCurrency()).toEqual('123');
+    expect('hi how are you'.toCurrency()).toEqual('NaN');
   });
 });
 

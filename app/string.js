@@ -33,23 +33,12 @@ String.prototype.words = function() {
 String.prototype.wordCount = function() {
     return this.words().length;
 };
-/*
-split the string from the decimal point then look for
-a pattern in the first element of the array.
-*/
+
 String.prototype.toCurrency = function() {
-    var money = this.split('.');
-    var beforeDot = money[0];
-    var pattern = /(-?\d+)(\d{3})/;
-    while(pattern.test(beforeDot)) {
-      beforeDot = beforeDot.replace(pattern, '$1' + ',' + '$2');
-    }
-    if(!money[1]){
-      console.log(money[1]);
-      return beforeDot;
-    }
-    return [beforeDot, money[1]].join('.');
-};
+  var money = Number(this);
+  return money.toString().split(/(?=(?:\d{3})+(?:\.|$))/g).join(',');
+}
+
 String.prototype.fromCurrency = function() {
     var currency = this.replace(/,/g, '');
     return Number(currency);
