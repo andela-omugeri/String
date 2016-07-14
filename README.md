@@ -1,5 +1,8 @@
-#String
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/be0684f14d1747669bf56c5643cdb1fe)](https://www.codacy.com/app/olive-nyotu/String?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andela-omugeri/String&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/andela-omugeri/String/tree/master.svg?style=svg)](https://circleci.com/gh/andela-omugeri/String/tree/master)
+
+#String
 
 This code extends the String class in java and adds more function in it.
 
