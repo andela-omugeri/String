@@ -18,7 +18,7 @@ describe('toLower', function() {
     expect('SMALL BABY'.toLower()).toEqual('small baby');
   });
   it('should convert all alphabetic characters to lowercase', function() {
-    expect('GAMBLE**U'.toUpper()).toEqual('gamble**u');
+    expect('GAMBLE**U'.toLower()).toEqual('gamble**u');
   });
 });
 
@@ -52,7 +52,7 @@ describe('words', function() {//add special characters
     expect('*why should you?'.words()).toEqual(['why', 'should', 'you']);
   });
   it('should return an array of unique words', function() {
-    expect('dawa ya moto ni moto'.words()).toEqual(['dawa', 'ya', 'ni', 'moto']);
+    expect('dawa ya moto ni moto'.words()).toEqual(['dawa', 'ya', 'moto', 'ni']);
   });
 });
 
@@ -82,6 +82,6 @@ describe('fromCurrency', function() {
     expect('1,264,829'.fromCurrency()).toEqual(1264829);
   });
   it('should return NaN when not a number', function() {
-    expect('hey there'.fromCurrency()).toEqual('NaN');
+    expect('hey there'.fromCurrency()).toEqual(NaN);
   });
 });
