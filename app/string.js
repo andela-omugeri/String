@@ -1,11 +1,11 @@
 String.prototype.hasVowels = function() {
     return /[aeiou]/i.test(this);
-  };
+};
 String.prototype.toUpper = function() {
     return this.replace(/[a-z]/g, (lowerChar) => {
       return String.fromCharCode(lowerChar.charCodeAt(0)-32);
     });
-  };
+};
 String.prototype.toLower = function() {
     return this.replace(/[A-Z]/g, (upperChar) => {
       return String.fromCharCode(upperChar.charCodeAt(0)+32);
@@ -17,7 +17,7 @@ String.prototype.ucFirst = function() {
     });
 };
 String.prototype.isQuestion = function() {
-    return /[?]/.test(this);
+    return /[?]$/.test(this);
 };
 String.prototype.words = function() {
     var uWords = [];
@@ -35,8 +35,8 @@ String.prototype.wordCount = function() {
 };
 
 String.prototype.toCurrency = function() {
-  var money = Number(this);
-  return money.toString().split(/(?=(?:\d{3})+(?:\.|$))/g).join(',');
+    var money = Number(this);
+    return money.toString().split(/(?=(?:\d{3})+(?:\.|$))/g).join(',');
 }
 
 String.prototype.fromCurrency = function() {
